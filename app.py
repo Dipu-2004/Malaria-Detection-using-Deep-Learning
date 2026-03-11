@@ -22,7 +22,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-MODEL_PATH = 'best_custom_cnn_malaria_model.h5'
+MODEL_PATH = 'models/best_custom_cnn_malaria_model.h5'
 model = None
 target_size = (130, 130)  # Default fallback
 
